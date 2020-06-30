@@ -24,11 +24,13 @@ sent to which register).
 After all customers in the store leave, the manager sends in the next group of shoppers waiting
 outside. When the last group of customers enter the store, the manager has finished his duties
 for the day (manager thread terminates).
+
 As much as every customer would like to leave after purchasing their groceries, the parking lot is
 absolute mayhem! It’s as if the customers have forgotten the rules of the road. Before any of the
 customers can leave, an accident occurs in the parking lot obstructing the exit! The customers in
 the first group and every group after that must remain (wait) in their cars until help arrives.
 Unfortunately for the customers, help arrives just as the last customer of the day is served.
+
 The store employee closes up the store and walks out. One by one, the shoppers leave (will be
 notify() ed) and the employee follows along immediately after (customers leave in ascending 
 order of their ID: Customer-1 leaves, Customer-2 leaves, Customer-3 leaves,…., Employee leaves;
